@@ -19,7 +19,6 @@ public class Main
             list.printTheLinkedList(list);
 
             System.out.println();
-
             list.deleteByPosition(list,0);
             list.printTheLinkedList(list);
     }
