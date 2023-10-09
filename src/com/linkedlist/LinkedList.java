@@ -52,9 +52,11 @@ public class LinkedList
 
         Node currentNode = list.head;
         while (currentNode!=null){
-            System.out.print(currentNode.value+" ");
+            System.out.print(currentNode.value+"->");
             currentNode = currentNode.next;
         }
+        System.out.print("END");
+        System.out.println();
     }
 
     public LinkedList deleteByValue(LinkedList list, int valueToDelete){
