@@ -3,6 +3,7 @@ package com.linkedlist;
 public class LinkedList
 {
     private Node head;
+    private Node last;
 
     private class Node{
 
@@ -48,9 +49,29 @@ public class LinkedList
 
     }
 
-    public void printTheLinkedList(LinkedList list){
+    /*public void addToLinkedListAtPosition(int position, int value){
 
-        Node currentNode = list.head;
+        Node newNode = new Node(value);
+
+        //to handle if the list is empty. i.e the new node becomes the head and the only element to be present in the list
+        if(head == null && position==0){
+            head = newNode;
+            return;
+        }
+        Node currentNode = head;
+        int counter = 0;
+        Node prev;
+
+        for(int index=1;index<position;index++){
+            currentNode = currentNode.next;
+        }
+        currentNode.next= newNode;
+
+    }*/
+
+    public void printTheLinkedList(){
+
+        Node currentNode = head;
         while (currentNode!=null){
             System.out.print(currentNode.value+"->");
             currentNode = currentNode.next;
